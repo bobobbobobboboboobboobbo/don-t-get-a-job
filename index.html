@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunt: Hydra Protocol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        <div id="crosshair"></div>
+        <div id="ui">
+            <div class="stat">HEALTH: <span id="hp">100</span>%</div>
+            <div class="stat">APPLICATIONS: <span id="count">1</span></div>
+            <div class="controls">WASD to Move | CLICK to Shoot</div>
+        </div>
+        <div id="death-screen">
+            <h1>HIRED (TO DEATH)</h1>
+            <p>The applications overwhelmed you.</p>
+            <button onclick="location.reload()">TRY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
